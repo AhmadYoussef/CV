@@ -135,26 +135,25 @@
                     Contact
                 </h2>
                 <form>
-                    <input id="firstName" type="text" name="firstName" placeholder="Enter your first Name...">
-                   <input id="lastName" type="text" name="lastName" placeholder="Enter your last Name...">
-                    <input id="firstName" type="text" name="firstName" placeholder="Enter your Email address...">
-                    <input id="phoneNumber" type="number" name="phoneNumber" placeholder="Enter your Phone Number...">
+                    <input id="firstName" type="text" name="first Name" placeholder="Enter your first Name..." onblur='Test("firstName");'>
+                   <input id="lastName" type="text" name="last Name" placeholder="Enter your last Name..." onblur="Test('lastName');">
+                    <input id="email" type="text" name="Email address" placeholder="Enter your Email address..." onblur="Test('email');">
+                    <input id="phoneNumber" type="text" name="phone Number" placeholder="Enter your Phone Number..." >
                     <div>
-                        <textarea id="message" placeholder="Enter your Message..."></textarea>
-                        <input type="submit" value="Submit">
+                        <textarea id="message" name="message" placeholder="Enter your Message..." onblur="Test('message');"></textarea>
+                        <input type="submit" value="Submit" onclick="return submitTest();">
                     </div>
                 </form>
             </article>
         </section>
     </main>
     <footer>
-        <a href="#about"><div class="backTop"><i class="fas fa-angle-double-up"></i></div></a>
+        <div class="backTop"><a href="#about"><i class="fas fa-angle-double-up"></i></a></div>
         <div>
             <div>
                 <a href="https://www.facebook.com/ahmad.wojokh" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.xing.com/profile/ahmad_Youssef3/cv?sc_o=mxb_p" target="_blank"><i class="fab fa-xing-square"></i></a>
                 <a href="https://www.linkedin.com/in/ahmad-youssef-82107386/" target="_blank"><i class="fab fa-linkedin"></i></a>
-
             </div>
             <p>Ahmad Youssef &#169; 2018</p>
         </div>
